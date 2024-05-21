@@ -1,0 +1,5 @@
+@import url('formulario.html');
+
+body {
+    cursor: crosshair; /* Cursor en forma de cruz por defecto */
+}

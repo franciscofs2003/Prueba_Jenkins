@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="actividad6d.css">
+    <link rel="stylesheet" href="actividad4c.css">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="accessibility-buttons">
+            <button onclick="toggleContrast()">Cambiar Contraste</button>
+            <button onclick="increaseTextSize()">Aumentar Tamaño del Texto</button>
+            <button onclick="decreaseTextSize()">Reducir Tamaño del Texto</button>
+        </div>
+        <h2>Formulario</h2>  <!-- Título -->
+        <form action="#" method="POST" id="form">
+            <!-- Sección de los datos Personales -->
+            <div class="form-section">
+                <h3>Datos Personales</h3>
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" >
+                
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" placeholder="Contraseña" >
+                
+                <label for="reppass">Repetir contraseña:</label>
+                <input type="password" id="reppass" name="reppass" placeholder="Repetir contraseña" >
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" >
+                
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" >
+                
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" placeholder="Provincia" >
+                
+                <label for="numhuespedes">Número de huéspedes:</label>
+                <input type="number" id="numhuespedes" name="numhuespedes" placeholder="Número de huéspedes" >
+            </div>
+
+            <!-- Sección de Servicios -->
+            <div class="form-section">
+                <h3>Servicios<a href="cuestionario.html"></a></h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="aire" name="aire"> Aire acondicionado</label>
+                    <label><input type="checkbox" id="almohadas" name="almohadas"> Almohadas a la carta</label>
+                    <label><input type="checkbox" id="caja" name="caja"> Caja fuerte</label>
+                    <label><input type="checkbox" id="humos" name="humos"> Detector de humos</label>
+                    <label><input type="checkbox" id="bar" name="bar"> Mini bar</label>
+                    <label><input type="checkbox" id="mesa" name="mesa"> Mesa de trabajo</label>
+                    <label><input type="checkbox" id="internet" name="internet"> Conexión a internet</label>
+                    <label><input type="checkbox" id="wifi" name="wifi"> WIFI</label>
+                </div>
+            </div>
+
+            <!-- Sección de Tipo de Habitación -->
+            <div class="form-section">
+                <h3>Tipo de habitación<a href="cuestionario.html"></a></h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="individual" name="individual"> Individual</label>
+                    <label><input type="checkbox" id="doble" name="doble"> Doble</label>
+                    <label><input type="checkbox" id="suite" name="suite"> Suite</label>
+                </div>
+            </div>
+
+            <!-- Sección de Pensión -->
+            <div class="form-section">
+                <h3>Pensión<a href="cuestionario.html"></a></h3>
+                <div class="checkbox-group" >
+                    <label><input type="checkbox" id="alojamiento" name="alojamiento"> Alojamiento</label>
+                    <label><input type="checkbox" id="desayuno" name="desayuno"> Desayuno</label>
+                    <label><input type="checkbox" id="media" name="media"> Media pensión</label>
+                </div>
+            </div>
+
+            <!-- Sección de Comentarios -->
+            <div class="form-section">
+                <h3>Comentarios o sugerencias<a href="cuestionario.html"></a></h3>
+                <input type="text" placeholder="Comentarios" class="large-input" >
+            </div>
+
+            <!-- Sección de Email -->
+            <div class="form-section">
+                <h3>E-mail de contacto<a href="cuestionario.html"></a></h3>
+                <input type="email" placeholder="E-mail" class="large-input" >
+            </div>
+
+            <!-- Sección de Política de Privacidad -->
+            <div class="form-section">
+                <label><input type="checkbox" id="politica" name="politica" > Acepto la política de privacidad.</label>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="form-section buttons">
+                <button type="submit">Aceptar</button>
+                <button type="submit" class="Rechazar">Rechazar</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="actividad6d.js"></script>
+</body>
+</html>
